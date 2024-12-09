@@ -1,0 +1,216 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Dec  9 10:58:12 2024
+| Host         : DESKTOP-BH2PT9V running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
+| Design       : system
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   148 |
+| Unused register locations in slices containing registers |   222 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           10 |
+|      7 |          130 |
+|      8 |            3 |
+|     10 |            3 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            4 |
+| No           | No                    | Yes                    |              45 |           26 |
+| No           | Yes                   | No                     |              48 |           12 |
+| Yes          | No                    | No                     |              26 |           12 |
+| Yes          | No                    | Yes                    |             906 |          313 |
+| Yes          | Yes                   | No                     |               1 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+-----------------------------------+---------------------------------------+------------------+----------------+
+|   Clock Signal  |           Enable Signal           |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++-----------------+-----------------------------------+---------------------------------------+------------------+----------------+
+|  baud_BUFG      | uart1/receiver/data_out_0[2]      |                                       |                1 |              1 |
+|  baud_BUFG      | uart1/receiver/data_out_0[7]      |                                       |                1 |              1 |
+|  baud_BUFG      | uart1/receiver/data_out_0[1]      |                                       |                1 |              1 |
+|  baud_BUFG      | uart1/transmitter/bit_out         | uart1/transmitter/bit_out0            |                1 |              1 |
+|  clk_IBUF_BUFG  |                                   |                                       |                1 |              1 |
+|  baud_BUFG      | uart1/receiver/data_out_0[5]      |                                       |                1 |              1 |
+|  baud_BUFG      | uart1/receiver/data_out_0[6]      |                                       |                1 |              1 |
+|  baud_BUFG      | uart1/receiver/data_out_0[4]      |                                       |                1 |              1 |
+|  baud_BUFG      | uart1/receiver/data_out_0[3]      |                                       |                1 |              1 |
+|  baud_BUFG      | uart1/receiver/data_out_0[0]      |                                       |                1 |              1 |
+|  received1_BUFG | tc/mem[0][6]_i_1_n_0              | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[87][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  baud_BUFG      |                                   |                                       |                3 |              7 |
+|  received1_BUFG | tc/mem[86][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[88][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[89][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG |                                   | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[100][6]_i_1_n_0            | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem                            | btnU_IBUF                             |                6 |              7 |
+|  received1_BUFG | tc/mem[106][6]_i_1_n_0            | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[109][6]_i_1_n_0            | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[117][6]_i_1_n_0            | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[113][6]_i_1_n_0            | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[118][6]_i_1_n_0            | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[11][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[107][6]_i_1_n_0            | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[123][6]_i_1_n_0            | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[122][6]_i_1_n_0            | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[103][6]_i_1_n_0            | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[108][6]_i_1_n_0            | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[110][6]_i_1_n_0            | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[105][6]_i_1_n_0            | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[101][6]_i_1_n_0            | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[114][6]_i_1_n_0            | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[119][6]_i_1_n_0            | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[102][6]_i_1_n_0            | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[104][6]_i_1_n_0            | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[111][6]_i_1_n_0            | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[115][6]_i_1_n_0            | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[120][6]_i_1_n_0            | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[116][6]_i_1_n_0            | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[124][6]_i_1_n_0            | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[112][6]_i_1_n_0            | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[121][6]_i_1_n_0            | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[10][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[32][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[18][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[22][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[23][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[126][6]_i_1_n_0            | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[29][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[125][6]_i_1_n_0            | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[16][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[26][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[2][6]_i_1_n_0              | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[24][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[14][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[25][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[12][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[30][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[31][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[20][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[15][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[1][6]_i_1_n_0              | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[21][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[27][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[13][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[28][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[17][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[19][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[43][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[46][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[4][6]_i_1_n_0              | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[51][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[33][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[38][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[50][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[40][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[54][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[53][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[55][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[56][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[58][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[41][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[52][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[37][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[45][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[35][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[36][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[47][6]_i_1_n_0             | btnU_IBUF                             |                6 |              7 |
+|  received1_BUFG | tc/mem[49][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[34][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[57][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[39][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[44][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[42][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[48][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[3][6]_i_1_n_0              | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[72][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[65][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[6][6]_i_1_n_0              | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[81][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[74][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[60][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[69][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[62][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[73][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[78][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[59][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[67][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[79][6]_i_1_n_0             | btnU_IBUF                             |                6 |              7 |
+|  received1_BUFG | tc/mem[5][6]_i_1_n_0              | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[63][6]_i_1_n_0             | btnU_IBUF                             |                6 |              7 |
+|  received1_BUFG | tc/mem[7][6]_i_1_n_0              | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[76][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[68][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[75][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[64][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[66][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[80][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[82][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[77][6]_i_1_n_0             | btnU_IBUF                             |                6 |              7 |
+|  received1_BUFG | tc/mem[70][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[71][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[61][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[83][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[84][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[92][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[96][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[9][6]_i_1_n_0              | btnU_IBUF                             |                6 |              7 |
+|  received1_BUFG | tc/mem[8][6]_i_1_n_0              | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[99][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[94][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[91][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[93][6]_i_1_n_0             | btnU_IBUF                             |                1 |              7 |
+|  received1_BUFG | tc/mem[97][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  received1_BUFG | tc/mem[95][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[98][6]_i_1_n_0             | btnU_IBUF                             |                4 |              7 |
+|  received1_BUFG | tc/mem[90][6]_i_1_n_0             | btnU_IBUF                             |                3 |              7 |
+|  received1_BUFG | tc/mem[85][6]_i_1_n_0             | btnU_IBUF                             |                2 |              7 |
+|  baud_BUFG      |                                   | uart1/receiver/count[7]_i_1_n_0       |                2 |              8 |
+|  baud_BUFG      |                                   | uart1/transmitter/count[7]_i_1__0_n_0 |                2 |              8 |
+|  baud_BUFG      | uart1/transmitter/temp[7]_i_1_n_0 |                                       |                1 |              8 |
+|  vga/E[0]       | vga/v_count_next_1                | btnU_IBUF                             |                7 |             10 |
+|  vga/E[0]       |                                   | btnU_IBUF                             |                7 |             10 |
+|  clk_IBUF_BUFG  | vga/E[0]                          |                                       |                3 |             10 |
+|  clk_IBUF_BUFG  |                                   | btnU_IBUF                             |               15 |             28 |
+|  clk_IBUF_BUFG  |                                   | uart1/baudrate_gen/clear              |                8 |             32 |
++-----------------+-----------------------------------+---------------------------------------+------------------+----------------+
+
+
